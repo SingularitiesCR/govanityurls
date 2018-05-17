@@ -1,8 +1,8 @@
-host: rakyll.pizza
+host: golang.singularities.com
 
 paths:
-  /portmidi:
-    repo: https://github.com/rakyll/portmidi
+  /go-utils:
+    repo: https://github.com/SingularitiesCR/go-utils
 
-  /launchpad:
-    repo: https://github.com/rakyll/launchpad
+  /cloud-apis:
+    repo: https://github.com/SingularitiesCR/cloud-apis
