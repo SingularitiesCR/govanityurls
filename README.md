@@ -15,17 +15,17 @@ Setup a [custom domain](https://cloud.google.com/appengine/docs/standard/python/
 
 Get the application:
 ```
-go get -u -d github.com/GoogleCloudPlatform/govanityurls
-cd $(go env GOPATH)/src/github.com/GoogleCloudPlatform/govanityurls
+go get -u -d github.com/SingularitiesCR/govanityurls
+cd $(go env GOPATH)/src/github.com/SingularitiesCR/govanityurls
 ```
 
-Edit `vanity.yaml` to add any number of git repos. E.g., `customdomain.com/portmidi` will
-serve the [https://github.com/rakyll/portmidi](https://github.com/rakyll/portmidi) repo.
+Edit `vanity.yaml` to add any number of git repos. E.g., `golang.singularities.com/go-utils` will
+serve the [https://github.com/SingularitiesCR/go-utils](https://github.com/SingularitiesCR/go-utils) repo.
 
 ```
 paths:
   /portmidi:
-    repo: https://github.com/rakyll/portmidi
+    repo: https://github.com/SingularitiesCR/go-utils
 ```
 
 You can add as many rules as you wish.
@@ -39,7 +39,7 @@ $ gcloud app deploy
 That's it! You can use `go get` to get the package from your custom domain.
 
 ```
-$ go get customdomain.com/portmidi
+$ go get golang.singularities.com/go-utils
 ```
 
 ### Running in other environments
